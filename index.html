@@ -5,11 +5,75 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>LiveLab 4 Demo</title>
+  <!-- Google Fonts for a clean, modern look -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Playfair+Display:700&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  Hello world
+  <!-- Header with navigation links -->
+  <header>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">About</a></li>
+        <!-- Contact link removed -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content starts here -->
+  <main>
+    <!-- Hero section with headline and tagline -->
+    <section class="hero">
+      <!-- Eco-friendly travel image, centered and responsive -->
+      <img 
+        src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80" 
+        alt="Traveler walking on a green path surrounded by nature" 
+        class="hero-eco-image"
+      >
+      <h1>Explore Sustainable Travel</h1>
+      <p class="tagline">Discover eco-friendly destinations and travel responsibly.</p>
+    </section>
+
+    <!-- Destination Cards section -->
+    <section class="destinations">
+      <h2>Eco-Friendly Destinations</h2>
+      <div class="destination-cards">
+        <!-- Card 1 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Lush green forest in Costa Rica">
+          <h3>Costa Rica</h3>
+          <p>Rainforests, wildlife, and sustainable eco-lodges await in this green paradise.</p>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Mountain landscape in New Zealand">
+          <h3>New Zealand</h3>
+          <p>Explore breathtaking mountains and eco-tours in a land of natural wonders.</p>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Clear blue waters in the Maldives">
+          <h3>Maldives</h3>
+          <p>Enjoy crystal-clear waters and eco-resorts focused on marine conservation.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Call-to-action section -->
+    <section class="cta">
+      <p>Ready to start your eco-adventure?</p>
+      <!-- Button now links to plan.html -->
+      <a href="plan.html" class="cta-button" aria-label="Plan your eco-friendly trip">Plan Your Trip</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 EcoTravel. Travel responsibly.</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 

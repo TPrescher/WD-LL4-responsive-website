@@ -1,0 +1,225 @@
+/* Use Google Fonts */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  background: #f5fbe7; /* Soft natural background */
+  color: #2e3d27; /* Dark green text for readability */
+}
+
+/* Header styles */
+header {
+  background: #a8d5ba; /* Calming green */
+  padding: 10px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2e3d27;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #388e3c; /* Darker green on hover */
+}
+
+/* Hero section styles */
+.hero {
+  background: #e0f2e9; /* Soft green background */
+  text-align: center;
+  padding: 40px 20px 30px 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.1em;
+  color: #4e6e5d;
+}
+
+/* Hero section image styles */
+.hero-eco-image {
+  display: block;
+  margin: 0 auto 18px auto; /* Center image and add space below */
+  max-width: 300px;         /* Limit image width */
+  width: 100%;              /* Responsive on small screens */
+  height: auto;             /* Keep aspect ratio */
+  border-radius: 12px;      /* Slightly rounded corners for a friendly look */
+  box-shadow: 0 2px 8px rgba(46, 61, 39, 0.10); /* Soft shadow */
+}
+
+/* Destinations section */
+.destinations {
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.destinations h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Destination cards container */
+.destination-cards {
+  display: flex;
+  flex-direction: column; /* Stack vertically on mobile */
+  gap: 20px;
+  align-items: center;
+}
+
+/* Individual card styles */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(46, 61, 39, 0.08);
+  padding: 15px;
+  max-width: 320px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 180px; /* Set a consistent height for all images */
+  object-fit: cover; /* Crop images to fill the area without distortion */
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 16px; /* Add more space below each image */
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(56, 142, 60, 0.15);
+}
+
+/* Call-to-action section */
+.cta {
+  background: #c8e6c9;
+  text-align: center;
+  padding: 30px 10px;
+  margin: 30px 0 0 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #388e3c;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #256029;
+}
+
+/* Footer styles */
+footer {
+  background: #a8d5ba;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.95em;
+  color: #2e3d27;
+  margin-top: 20px;
+}
+
+/* Booking form section styles */
+.booking-form-section {
+  max-width: 420px; /* Slightly wider for better layout */
+  margin: 40px auto 40px auto; /* More space above and below */
+  background: #e0f2e9;
+  padding: 28px 18px; /* More padding for comfort */
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(46, 61, 39, 0.10);
+  text-align: left;
+  /* Center the section on the page */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-form-section h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6em;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.booking-form-section p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4e6e5d;
+  font-size: 1em;
+}
+
+/* Booking form styles */
+.booking-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* More space between fields */
+}
+
+.booking-form label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-top: 6px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 10px;
+  border: 1px solid #b2c9b7;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #fff;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+}
+
+.booking-form textarea {
+  resize: vertical;
+}
+
+/* Make the submit button match the site's style */
+.booking-form .cta-button {
+  margin-top: 12px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* Responsive styles for screens 600px and wider */
+@media (min-width: 600px) {
+  /* Arrange cards horizontally on larger screens */
+  .destination-cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card {
+    max-width: 280px;
+  }
+}
